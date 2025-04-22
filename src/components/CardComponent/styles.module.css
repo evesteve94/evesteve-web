@@ -1,0 +1,95 @@
+/* Bullet pitch */
+.pitch {
+  width: 100%;
+  min-height: 50vh;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  color: var(--text-color);
+  padding: 1rem;
+}
+.pitchCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: rgba(157, 192, 139, 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  height: 12rem;
+}
+
+.pitchCard div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.pitchCard svg {
+  font-size: 3rem;
+  color: var(--light-green);
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.pitchCard p {
+  color: var(--text-color);
+}
+
+.pitchCard:hover {
+  background-color: rgba(157, 192, 139, 0.2);
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+/* Change icon color on hover */
+.pitchCard:hover svg {
+  color: var(--text-color);
+}
+
+.cardDesc {
+  font-size: 1rem;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .pitch {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pitchCard div {
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 500px) {
+  .pitch {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .pitchCard {
+    height: fit-content;
+    flex-direction: row;
+    transition: ease-in-out 0.3s;
+    /* text-align: center; */
+  }
+
+  .pitchCard div {
+    padding: 0.5rem;
+    width: 100%;
+    overflow-y: scroll;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    height: fit-content;
+    transition: ease-in-out 0.3s;
+  }
+
+  .pitchCard svg {
+    padding-left: 0.5rem;
+  }
+}

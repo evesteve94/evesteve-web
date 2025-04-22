@@ -1,0 +1,31 @@
+.contactPage {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  padding: 1rem;
+  margin-top: -2rem;
+}
+
+.contactContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contactText {
+  color: var(--text-color);
+}
+
+/* Responsiv design */
+@media (max-width: 500px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+  }
+}

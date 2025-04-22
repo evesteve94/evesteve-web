@@ -1,0 +1,89 @@
+/* FAQ.module.css */
+:root {
+  --bg-light: #f8f5e9;
+  --text-dark: #3a7d44;
+  --accent-light: rgba(157, 192, 139, 0.1);
+  --accent-strong: #9dc08b;
+}
+
+.container {
+  width: 100%;
+  /* margin: 2rem auto; */
+  /* padding: 0 1rem; */
+  font-family: "Roboto", sans-serif;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-family: serif;
+  /* font-style: italic; */
+  text-align: center;
+  font-weight: 300;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.item {
+  border-bottom: 1px solid var(--accent-strong);
+}
+
+.question {
+  width: 100%;
+  text-align: left;
+  /* padding: 1rem; */
+  background: var(--accent-light);
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  transition: background 0.2s;
+  transition: ease-in-out 0.3s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question:hover {
+  background: rgba(157, 192, 139, 0.2);
+}
+/* Lägg till efter befintliga .question och .answer */
+
+.icon {
+  /* padding-right: 0.75rem; */
+  transition: transform 0.3s;
+  transform: rotate(0deg);
+  color: var(--orange-color);
+}
+
+.iconOpen {
+  transform: rotate(90deg);
+}
+
+/* Svarsrutan: dölj som standard */
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 1rem;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+/* När .answerOpen är påslaget, visa långa svar */
+.answerOpen {
+  max-height: 500px; /* tillräckligt stort för svaren */
+  opacity: 1;
+  padding: 1rem;
+}
+
+.answer {
+  /* padding: 1rem; */
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: ease-in-out 0.3s;
+}
+
+/* .answer p {
+  margin: 0.5rem 0;
+} */

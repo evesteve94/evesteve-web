@@ -1,0 +1,174 @@
+:root {
+  --background-color: #f8f5e9;
+  --text-color: #3a7d44;
+  --light-green: #9dc08b;
+  --orange-color: #df6d14;
+}
+
+/* Huvudlayout */
+.LandingPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  overflow-x: hidden;
+}
+
+/* Vänstersida – info */
+.information {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1rem;
+  padding: 0 1rem;
+  /* height: 70vh; */
+}
+
+.screens {
+  max-width: 100%;
+}
+/* Introduktionstext */
+.intro {
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  max-width: 100%;
+}
+
+/* Rubriker */
+.bigTitle {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: serif;
+  letter-spacing: 1px;
+  margin-bottom: -1rem;
+}
+
+span {
+  color: #df6d14;
+}
+
+.title {
+  font-size: 2rem;
+  /* font-style: italic; */
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  /* margin-bottom: -1rem; */
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  color: rgba(58, 125, 68, 0.85);
+}
+
+.price {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.theTeam {
+  width: 100%;
+  border-radius: 0.4rem;
+  /* margin-top: -1.5rem; */
+  margin-bottom: 1rem;
+}
+
+.btns {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.buttons {
+  /* margin: 1rem 0; */
+  background-color: var(--transparent-green); /* light green w/ opacity */
+  color: var(--text-color);
+  /* border-top: var(--text-color) 2px solid; */
+  border-bottom: var(--text-color) 2px solid;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: ease-in-out 0.3s;
+  width: 100%;
+  /* width: 40%; */
+}
+
+.buttons:hover {
+  border-bottom: var(--orange-color) 2px solid;
+}
+
+.buttons:hover svg {
+  color: var(--orange-color);
+  border: none;
+}
+
+@media (max-width: 1100px) {
+  .information {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .intro p {
+    margin-bottom: -0.5rem;
+  }
+
+  .screens {
+    margin-top: 1rem;
+  }
+
+  .price {
+    grid-template-columns: 1fr;
+  }
+
+  .theTeam {
+    margin: 0 auto;
+    width: 50%;
+    /* margin-bottom: -2.7rem; */
+  }
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .LandingPage {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+  .information {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    max-width: 100%;
+  }
+}
+
+/* Responsiv design */
+@media (max-width: 500px) {
+  .LandingPage {
+    padding: 0.5rem;
+  }
+
+  .theTeam {
+    width: 100%;
+  }
+
+  .btns {
+    grid-template-columns: 1fr;
+  }
+}

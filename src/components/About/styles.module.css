@@ -1,0 +1,93 @@
+.longText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.longText h1 {
+  text-align: left;
+}
+
+.boldText {
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+em {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.textPhoto {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1rem;
+}
+
+.textPhoto p {
+  padding: 0.5rem 0;
+}
+
+.longText ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.longText li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-family: serif;
+}
+
+.guarantees {
+  font-family: serif;
+  font-weight: 300;
+}
+.solution {
+  font-family: serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.imagesAbout {
+  display: block;
+  margin: 0 auto;
+}
+
+.imagesAbout img {
+  float: right;
+  width: 50%;
+  height: auto;
+  margin: 0 1.5rem 1rem 0;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.imagesAbout div {
+  overflow: hidden; /* clears the float to prevent layout collapse */
+}
+
+/* Responsiv design */
+@media (max-width: 1100px) {
+}
+@media (max-width: 768px) {
+}
+
+/* Responsiv design */
+@media (max-width: 500px) {
+  .imagesAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .imagesAbout img {
+    width: 100%;
+  }
+
+  .longText h1 {
+    text-align: left;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,99 @@
+/* Container för tabellen */
+.packages {
+  background-color: var(--background-color);
+  /* padding: 2rem; */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  color: var(--text-color);
+}
+
+.packages h3 {
+  font-size: 2rem;
+  font-family: serif;
+  /* font-style: italic; */
+  text-align: center;
+  font-weight: 300;
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+/* Tabellens stil */
+.packages table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text-color);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1rem;
+  text-align: right;
+}
+
+/* Rubrikrad */
+.packages thead th {
+  background-color: var(--transparent-green); /* light green w/ opacity */
+  color: var(--text-color);
+  padding: 1rem;
+  text-transform: lowercase;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(58, 125, 68, 0.2); /* soft green */
+  font-family: serif;
+  font-weight: 200;
+}
+
+/* Celler */
+.packages tbody td {
+  padding: 1rem;
+  text-align: right;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(58, 125, 68, 0.1);
+}
+
+/* Pris-raden */
+.packages tbody tr:first-child td {
+  /* color: rgba(223, 109, 20, 0.85); orange with opacity */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Radhöjd för luft */
+.packages tbody tr td {
+  line-height: 1.6;
+}
+
+.extras {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .packages {
+    padding: 1rem;
+  }
+
+  .packages table {
+    font-size: 0.9rem;
+  }
+
+  .packages thead th,
+  .packages tbody td {
+    padding: 0.75rem;
+  }
+}
+
+/* Responsiv design */
+@media (max-width: 500px) {
+  .packages {
+    padding: 0;
+  }
+
+  .packages h3 {
+    font-size: 1.5rem;
+  }
+
+  .packages thead th {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+}

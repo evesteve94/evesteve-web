@@ -1,0 +1,49 @@
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: serif;
+  letter-spacing: 1px;
+  margin-bottom: -1rem;
+  color: var(--text-color);
+  text-align: left;
+  width: 100%;
+}
+
+.pricePage {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  padding: 2rem;
+  margin-top: -2rem;
+}
+
+.priceTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+/* Responsiv design */
+@media (max-width: 768px) {
+}
+
+/* Responsiv design */
+@media (max-width: 500px) {
+  .pricePage {
+    padding: 1rem;
+  }
+
+  .priceTop {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h1 {
+    text-align: center;
+  }
+}
