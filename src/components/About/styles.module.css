@@ -55,11 +55,15 @@ em {
   margin: 0 auto;
 }
 
+.imagesAbout p {
+  padding: 0.5rem 0;
+}
+
 .imagesAbout img {
   float: right;
-  width: 50%;
+  width: 30%;
   height: auto;
-  margin: 0 1.5rem 1rem 0;
+  padding: 0.5rem;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -79,7 +83,7 @@ em {
   .imagesAbout {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 
   .imagesAbout img {
