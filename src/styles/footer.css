@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 14vh;
   z-index: 1;
-  background-image: url("footer-new.png");
+  background-image: url("/footer-new.png");
   background-position: center;
   background-size: cover;
   padding: 0.5rem;
