@@ -2,11 +2,11 @@
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
-  background: #f8f5e9;
+  background: var(--background-color);
   border-radius: 0.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   font-family: "Roboto" sans-serif;
-  color: #3a7d44;
+  color: var(--text-color);
   margin-bottom: 1rem;
 }
 
@@ -116,15 +116,18 @@ button:active {
   border: none;
   color: var(--text-color);
   cursor: pointer;
-  padding-left: 0.5rem;
   font-size: 1rem;
   transition: color 0.2s;
   border: none;
 }
 
+.infoBtnInline {
+  margin-left: 1rem;
+}
+
 .infoBtn:hover,
 .infoBtnInline:hover {
-  color: var(--accent-strong);
+  color: var(--transparent-green);
 }
 
 .infoBtn:active {

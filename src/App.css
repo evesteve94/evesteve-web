@@ -8,11 +8,11 @@
 
 /* this is a global declaration*/
 :root {
-  --background-color: #f8f5e9;
-  --text-color: #3a7d44;
-  --light-green: #9dc08b;
-  --orange-color: #df6d14;
-  --transparent-green: rgba(157, 192, 139, 0.3);
+  --background-color: #e9f5f8;
+  --text-color: #3a6a7d;
+  --light-green: #8bc0bf;
+  --orange-color: #85b8cb;
+  --transparent-green: rgba(58, 106, 125, 0.3);
 }
 
 #root {

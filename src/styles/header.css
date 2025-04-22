@@ -1,7 +1,7 @@
 header {
   width: 100%;
   min-height: 10vh;
-  background-image: url("/header-waves.png");
+  background-image: url("/header-blue.png");
   background-position: bottom;
   background-size: cover;
   font-family: "Roboto", serif;
@@ -106,6 +106,7 @@ header {
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: serif;
   }
 
   .nav-links.active {
@@ -125,6 +126,12 @@ header {
 
   .nav-links {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    min-height: 5rem;
   }
 }
 @media (max-width: 500px) {

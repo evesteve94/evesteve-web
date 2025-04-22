@@ -34,6 +34,7 @@ const ContactForm = () => {
   return (
     <form ref={form} onSubmit={sendEmail} className={styles.form}>
       <input type="text" name="name" placeholder="Ditt namn" required />
+      <input type="email" name="email" placeholder="din@email.com" required />
       <input type="text" name="company" placeholder="Företag" />
       <input type="text" name="deadline" placeholder="Deadline (valfritt)" />
       <textarea name="message" placeholder="Ditt meddelande" required />

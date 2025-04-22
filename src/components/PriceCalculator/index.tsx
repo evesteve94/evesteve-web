@@ -97,7 +97,7 @@ const PriceCalculator: React.FC<Props> = ({ onInfoClick }) => {
 
   return (
     <div className={styles.calculator}>
-      <h2>prisräknare</h2>
+      <h2>vad kostar en hemsida?</h2>
 
       <div className={styles.inputGroup}>
         <label>

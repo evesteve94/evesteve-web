@@ -14,11 +14,12 @@
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background-color: rgba(157, 192, 139, 0.1);
+  background-color: rgba(139, 176, 192, 0.1);
   padding: 0.75rem 1rem;
   border-radius: 8px;
   transition: background-color 0.3s ease;
   height: 12rem;
+  transition: transform 0.2s ease-in-out;
 }
 
 .pitchCard div {
@@ -40,9 +41,10 @@
 }
 
 .pitchCard:hover {
-  background-color: rgba(157, 192, 139, 0.2);
+  background-color: rgba(139, 158, 192, 0.2);
   cursor: pointer;
   color: var(--text-color);
+  transform: translateY(-3px);
 }
 
 /* Change icon color on hover */

@@ -10,7 +10,7 @@ const LandingPage = () => {
   return (
     <div className={styles.LandingPage}>
       <div className={styles.information}>
-        <img className={styles.screens} src="screens.png" alt="" />
+        <img className={styles.screens} src="screens-blue.png" alt="" />
         <div className={styles.intro}>
           <h1 className={styles.bigTitle}>
             evesteve web<span>.</span>
@@ -37,13 +37,13 @@ const LandingPage = () => {
           <div className={styles.btns}>
             <Link to={"/priser"}>
               <button className={styles.buttons}>
-                beräkna ditt pris{"   "}
+                Beräkna ditt pris{"   "}
                 <FontAwesomeIcon icon={faCalculator} />
               </button>
             </Link>
             <Link to={"/kontakt"}>
               <button className={styles.buttons}>
-                ta kontakt <FontAwesomeIcon icon={faPhone} />
+                Ta kontakt <FontAwesomeIcon icon={faPhone} />
               </button>
             </Link>
           </div>
@@ -57,13 +57,13 @@ const LandingPage = () => {
           <div className={styles.btns}>
             <Link to={"/priser"}>
               <button className={styles.buttons}>
-                beräkna ditt pris{"   "}
+                Beräkna ditt pris{"   "}
                 <FontAwesomeIcon icon={faCalculator} />
               </button>
             </Link>
             <Link to={"/kontakt"}>
               <button className={styles.buttons}>
-                ta kontakt <FontAwesomeIcon icon={faPhone} />
+                Ta kontakt <FontAwesomeIcon icon={faPhone} />
               </button>
             </Link>
           </div>
