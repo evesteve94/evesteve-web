@@ -1,55 +1,46 @@
-# React + TypeScript + Vite
+# evesteve web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Logo](./public/logo.png)
 
-Currently, two official plugins are available:
+Welcome to the repo for **evesteve web** – a personal project currently under construction.  
+This site is part testbed, part passion project, and hopefully the foundation of a real business in the near future.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
 
-## Expanding the ESLint configuration
+**evesteve web** is a handcrafted website project aimed at helping small businesses get beautiful, fast, and functional web presences without the usual headaches. While still in development, the vision is to offer custom-built websites with a personal touch — no templates, no fluff.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The name comes from a mix of my name (Eva) and my four-legged coding companion, Stevie 🐶 – my best friend and best colleague.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Project Status 🚧
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This is a **work in progress** and a space for me to experiment, learn, and build out the kind of services I'd one day love to offer full-time.  
+While it's not yet deployed live, that's the goal — to grow this into something real.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tech Stack 🛠️
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# evesteve-web
+- **React** with TypeScript
+- **React Router** for routing
+- **CSS Modules** for styling
+- **FontAwesome** for icons
+- **Figma** for all custom UI elements and branding (including logo and illustrations)
+- **Headless CMS (planned integration)**
+
+## Features (Current & Planned)
+
+- Fully responsive layout
+- Custom illustrations and logos made in Figma
+- Floating text layout with images
+- Mobile-friendly navigation with smooth dropdown transitions
+- Modular and scalable component structure
+- Planned support for headless CMS (like Sanity or Contentful)
+- SEO basics and Google Analytics 4 integration (in progress)
+
+## Want to Follow Along?
+
+Feel free to star or watch the repo — updates will be pushed as the site evolves.  
+Once it's ready for public release, deployment links and live previews will be shared here!
+
+---
+
+Thanks for checking it out ✨  
+Feel free to reach out if you're curious or just want to connect.
